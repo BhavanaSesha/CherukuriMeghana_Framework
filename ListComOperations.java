@@ -1,24 +1,20 @@
-package listcomp;
-
 import java.util.*;
-import java.lang.*;
-
 public class ListComOperations {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	public static void main(String[] args) 
+	{
 	   Scanner sc = new Scanner(System.in);
 	   while(true)
 	   {
-	 System.out.println("enter your choice:1.Fetching\n 2.adding\n 3.removing\n 4.printing");
+	 System.out.println("enter your choice:1.Fetch\n 2.add\n 3.remove\n 4.print");
 	   int choice=sc.nextInt();
 	 Operations obj = new Operations();
 	 switch(choice) {
 	 case 1:
 		 System.out.println("enter the position to fetch:");
-		 int position=sc.nextInt();
-		 int res=obj.fetchElements(position);
-		 System.out.println(res);
+		 int pos=sc.nextInt();
+		 int result=obj.fetchElements(pos);
+		 System.out.println(result);
 		 break;
 	 case 2:
 		 System.out.println("Eneter an element to add into the arraylist: ");
